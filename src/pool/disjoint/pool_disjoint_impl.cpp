@@ -282,7 +282,7 @@ class DisjointPool::AllocImpl {
     // Configuration for this instance
     DisjointPoolConfig params;
 
-    // Used in alghoritm for finding buckets
+    // Used in algorithm for finding buckets
     std::size_t MinBucketSizeExp;
 
     // Coarse-grain allocation min alignment

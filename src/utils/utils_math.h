@@ -7,6 +7,15 @@
  *
  */
 
-#include <cstddef>
+#include <assert.h>
+#include <stddef.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 size_t getLeftmostSetBitPos(size_t num);
+
+#ifdef __cplusplus
+}
+#endif

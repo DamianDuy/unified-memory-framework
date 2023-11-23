@@ -13,12 +13,7 @@
 // The position of the bit is counted from 0
 // e.g. for 01000011110 the position equals 9.
 size_t getLeftmostSetBitPos(size_t num) {
+    assert(num != 0 && "Finding leftmost set bit when number equals zero is undefined");
     // From C++20 countl_zero could be used for that.
-    size_t position = 0;
-    while (num > 0) {
-        num >>= 1;
-        position++;
-    }
-    position--;
-    return position;
+    return 31 - __builtin_clz(num);
 }
