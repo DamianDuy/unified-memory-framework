@@ -11,3 +11,4 @@ Intel Unified Memory Framework documentation
    example-usage.rst
    api.rst
    glossary.rst
+   disjoint-pool.rst
